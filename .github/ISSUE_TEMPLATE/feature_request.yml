@@ -1,0 +1,34 @@
+name: Feature request / 功能建议
+description: Suggest a feature, symbol or compatibility improvement (English or Chinese) / 提出功能、符号或兼容性需求（中英文均可）
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        说明使用场景比只写「希望支持 X」更有用；需求集中时更容易排进版本。
+        Explaining your use case is more useful than just "please support X".
+  - type: textarea
+    id: scenario
+    attributes:
+      label: 使用场景
+      description: 你在做什么？卡在哪一步？现在怎么绕过？
+      placeholder: 例如：课件里要写化学方程式，现在只能先用 LaTeX 编译成图片再插入……
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 希望怎么解决
+  - type: input
+    id: environment
+    attributes:
+      label: 你的 Office / macOS 版本
+      placeholder: PowerPoint 16.90 / macOS 15.2 / M2
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已搜索过现有 issue，没有重复
+          required: true

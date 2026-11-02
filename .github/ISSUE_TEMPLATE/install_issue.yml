@@ -1,0 +1,49 @@
+name: Install & compatibility / 安装与兼容性
+description: Install failed, cannot open, double-click does nothing, no ribbon tab (English or Chinese) / 安装失败、打不开、双击没反应、Office 里没有选项卡（中英文均可）
+title: "[Install] "
+labels: ["install"]
+body:
+  - type: dropdown
+    id: issue
+    attributes:
+      label: 遇到的问题
+      options:
+        - 安装包打不开 / 提示无法验证开发者
+        - 安装成功但 Office 里没有 TeXEq 选项卡
+        - 双击公式没反应
+        - 提示辅助功能未授权
+        - 更新失败
+        - 其他
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: TeXEq 版本
+      placeholder: 2.2.15
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: macOS 版本与芯片
+      placeholder: macOS 15.2 / M2
+    validations:
+      required: true
+  - type: input
+    id: office
+    attributes:
+      label: Office 版本
+      placeholder: PowerPoint 16.90 / Microsoft 365
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: 已经尝试过什么
+      description: 例如右键打开、隐私与安全性放行、辅助功能勾选、重启 Office
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: 截图
+      description: 错误提示、系统设置页面、Office 工具栏截图

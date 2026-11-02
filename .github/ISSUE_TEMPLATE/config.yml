@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Website & download / 官网与下载
+    url: https://texeq.rancholab.cn
+    about: Installers, 7-day trial, licensing / 安装包、7 天试用、授权说明
+  - name: Download latest release / 下载最新版
+    url: https://github.com/Rancho-123/texeq/releases/latest
+    about: pkg and SHA-256 checksum / 安装包与校验值
+  - name: Business & feedback / 商务与反馈
+    url: https://texeq.rancholab.cn/feedback.html
+    about: School or lab licensing, invoices, custom requests; email wangyu_1899@126.com / 学校或课题组采购、发票、定制需求
+  - name: Documentation & FAQ / 使用文档与常见问题
+    url: https://texeq.rancholab.cn/#faq
+    about: Install, Accessibility, legacy equation conversion / 安装、辅助功能、旧公式转换

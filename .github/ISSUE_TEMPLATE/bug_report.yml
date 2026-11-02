@@ -1,0 +1,76 @@
+name: Bug report / 问题反馈
+description: Report a bug (English or Chinese) / 报告问题（中英文均可，请附版本、复现步骤和截图）
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈（中英文均可）。提交前请先搜索是否已有同类 issue。
+        如果是安装/权限问题，请优先使用「安装与兼容性」模板。
+        Thanks for reporting (English or Chinese). Please search existing issues first; for install or permission problems, use the "Install & compatibility" template.
+  - type: input
+    id: version
+    attributes:
+      label: TeXEq 版本
+      description: 菜单栏 → 关于 TeXEq，或安装包文件名
+      placeholder: 2.2.15
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS 版本与芯片
+      placeholder: macOS 15.2 / Apple M2
+    validations:
+      required: true
+  - type: input
+    id: office
+    attributes:
+      label: Office 版本
+      placeholder: PowerPoint 16.90 / Microsoft 365
+    validations:
+      required: true
+  - type: dropdown
+    id: host
+    attributes:
+      label: 出问题的应用
+      options:
+        - PowerPoint
+        - Word
+        - TeXEq 编辑器
+        - 安装/更新
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 打开 PPT，选中公式
+        2. 双击公式
+        3. 修改后关闭窗口
+        4. ……
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 期望结果 vs 实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: 截图 / 样例文件 / 其他信息
+      description: 可以把脱敏后的 pptx/docx 拖进来
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已搜索过现有 issue，没有重复
+          required: true
+        - label: 我使用的是官网/GitHub Releases 下载的版本
+          required: true

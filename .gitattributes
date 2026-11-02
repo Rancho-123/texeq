@@ -1,0 +1,5 @@
+# Binary assets
+*.png binary
+*.pkg binary
+*.sha256 text eol=lf
+*.md text eol=lf

@@ -1,0 +1,6 @@
+.DS_Store
+*.pkg
+*.sha256
+*.dmg
+*.zip
+node_modules/
