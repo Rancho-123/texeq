@@ -1,3 +1,5 @@
+![TeXEq — 专为 macOS 版 Word / PowerPoint 打造的公式编辑器](docs/social-preview.png)
+
 # TeXEq
 
 ### 专为 macOS 版 Word / PowerPoint 打造的专业公式编辑器

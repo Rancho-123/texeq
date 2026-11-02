@@ -1,3 +1,5 @@
+![TeXEq — a MathType / AxMath-style equation editor for Word & PowerPoint on macOS](docs/social-preview.png)
+
 # TeXEq
 
 **A MathType / AxMath-style equation editor, built for Microsoft Office on macOS.**
