@@ -1,24 +1,45 @@
-![TeXEq — a MathType / AxMath-style equation editor for Word & PowerPoint on macOS](docs/social-preview.png)
+<p align="center">
+  <b>English</b> · <a href="README.zh-CN.md">简体中文</a>
+</p>
 
-# TeXEq
+<h1 align="center">TeXEq</h1>
 
-**A MathType / AxMath-style equation editor, built for Microsoft Office on macOS.**
+<p align="center">
+  <strong>A MathType / AxMath-style equation editor, built for Microsoft Office on macOS.</strong><br>
+  <em>Switch to Mac. Keep your equations.</em>
+</p>
 
-**Switch to Mac. Keep your equations.**
+<p align="center">
+  <a href="https://github.com/Rancho-123/texeq/releases/latest"><img src="docs/badges/version-2.2.15.svg" alt="version 2.2.15"></a>
+  <img src="docs/badges/macos-15.svg" alt="macOS 15+">
+  <img src="docs/badges/apple-silicon.svg" alt="Apple silicon">
+  <img src="docs/badges/office.svg" alt="Office 2019 / 2021 / 365">
+  <img src="docs/badges/engine.svg" alt="KaTeX engine">
+  <img src="docs/badges/size.svg" alt="~4 MB">
+  <img src="docs/badges/trial.svg" alt="7-day free trial">
+</p>
 
-[English](README.md) · [简体中文](README.zh-CN.md)
+<p align="center">
+  <a href="https://texeq.rancholab.cn"><b>Website</b></a> ·
+  <a href="https://texeq.rancholab.cn/#download">Download</a> ·
+  <a href="https://github.com/Rancho-123/texeq/releases/latest">Releases</a> ·
+  <a href="docs/INSTALL.md">Install guide</a> ·
+  <a href="CHANGELOG.md">Changelog</a> ·
+  <a href="https://github.com/Rancho-123/texeq/issues">Issues</a>
+</p>
 
-`macOS 15+` · `Apple silicon` · `PowerPoint + Word` · `LaTeX` · `real SVG` · `no TeX install`
-
-[Official website & download](https://texeq.rancholab.cn) · [Releases](https://github.com/Rancho-123/texeq/releases/latest) · [Issues](https://github.com/Rancho-123/texeq/issues)
-
-![TeXEq editor: live KaTeX preview above, LaTeX source below](docs/editor-hero.png)
+<p align="center">
+  <a href="https://texeq.rancholab.cn"><img src="docs/social-preview.png" alt="TeXEq — write LaTeX, insert real SVG, double-click to edit" width="840"></a>
+</p>
 
 TeXEq is a lightweight, native equation editor for **Microsoft PowerPoint and Word on macOS**. It brings a familiar MathType / AxMath-style workflow to the Mac: LaTeX editing with live preview, true SVG vector output in PowerPoint, double-click editing that keeps the LaTeX source, and migration of compatible legacy equation objects.
 
 Whether you are preparing lecture slides, writing papers, building teaching materials, or moving years of Office documents from Windows to a Mac, TeXEq keeps your equations editable.
 
 **No Windows VM. No TeX distribution. Install and start writing.**
+
+> [!IMPORTANT]
+> **The installer is not notarized by Apple.** If macOS blocks it, right-click the `.pkg` → **Open**, or use **System Settings → Privacy & Security → Open Anyway**. On first launch, enable **TeXEq** in **System Settings → Privacy & Security → Accessibility** — without it, double-click editing will not respond. Full guide: [docs/INSTALL.md](docs/INSTALL.md).
 
 ## Why TeXEq
 
@@ -44,7 +65,8 @@ TeXEq bridges that gap: a familiar MathType / AxMath-style editing experience, m
 - The replacement keeps the original position, size, rotation and z-order as closely as possible.
 - If conversion fails, the original object is left untouched.
 
-> **Compatibility note:** conversion requires the legacy object to keep extractable TeX / LaTeX information. Image-only equations, screenshots and unsupported objects cannot be reconstructed. TeXEq does not promise to open every legacy equation.
+> [!NOTE]
+> Conversion requires the legacy object to keep **extractable TeX / LaTeX information**. Image-only equations, screenshots and unsupported objects cannot be reconstructed. TeXEq does not promise to open every legacy equation.
 
 ### 3. True SVG vector equations in PowerPoint
 
@@ -121,7 +143,7 @@ TeXEq supports the common mathematical LaTeX syntax supported by KaTeX. TikZ, PS
 2. Verify the checksum (recommended): `shasum -a 256 TeXEq-*-katex-arm64.pkg` must match the value in the release notes.
 3. Double-click the package and install (administrator password required).
 4. The installer is not notarized by Apple. If macOS blocks it, right-click the `.pkg` → **Open**, or go to **System Settings → Privacy & Security** and click **Open Anyway**.
-5. On first launch, grant **Accessibility** permission (System Settings → Privacy & Security → Accessibility → enable TeXEq). TeXEq needs it to receive double-click events from Office.
+5. On first launch, grant **Accessibility** permission (System Settings → Privacy & Security → Accessibility → enable TeXEq).
 6. Open PowerPoint or Word — the **TeXEq** tab appears in the ribbon.
 
 Full step-by-step guide: [docs/INSTALL.md](docs/INSTALL.md).

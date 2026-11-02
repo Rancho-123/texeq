@@ -1,26 +1,45 @@
-![TeXEq — 专为 macOS 版 Word / PowerPoint 打造的公式编辑器](docs/social-preview.png)
+<p align="center">
+  <a href="README.md">English</a> · <b>简体中文</b>
+</p>
 
-# TeXEq
+<h1 align="center">TeXEq</h1>
 
-### 专为 macOS 版 Word / PowerPoint 打造的专业公式编辑器
+<p align="center">
+  <strong>专为 macOS 版 Word / PowerPoint 打造的专业公式编辑器</strong><br>
+  <em>熟悉 MathType / AxMath 的操作体验，专为 Mac 重新打造。</em>
+</p>
 
-**熟悉 MathType / AxMath 的操作体验，专为 Mac 重新打造。**
+<p align="center">
+  <a href="https://github.com/Rancho-123/texeq/releases/latest"><img src="docs/badges/version-2.2.15.svg" alt="版本 2.2.15"></a>
+  <img src="docs/badges/macos-15.svg" alt="macOS 15+">
+  <img src="docs/badges/apple-silicon.svg" alt="Apple 芯片">
+  <img src="docs/badges/office.svg" alt="Office 2019 / 2021 / 365">
+  <img src="docs/badges/engine.svg" alt="KaTeX 引擎">
+  <img src="docs/badges/size.svg" alt="约 4 MB">
+  <img src="docs/badges/trial.svg" alt="7 天免费试用">
+</p>
 
-**换 Mac，不必从头重写每一个公式。**
+<p align="center">
+  <a href="https://texeq.rancholab.cn"><b>官方网站</b></a> ·
+  <a href="https://texeq.rancholab.cn/#download">下载</a> ·
+  <a href="https://github.com/Rancho-123/texeq/releases/latest">Releases</a> ·
+  <a href="docs/INSTALL.md">安装指南</a> ·
+  <a href="CHANGELOG.md">更新日志</a> ·
+  <a href="https://github.com/Rancho-123/texeq/issues">问题反馈</a>
+</p>
 
-[English](README.md) · [简体中文](README.zh-CN.md)
-
-`macOS 15+` · `Apple 芯片` · `PowerPoint + Word` · `LaTeX` · `SVG 矢量` · `免装 TeX`
-
-[官方网站与下载](https://texeq.rancholab.cn) · [下载最新版](https://github.com/Rancho-123/texeq/releases/latest) · [问题反馈](https://github.com/Rancho-123/texeq/issues)
-
-![TeXEq 编辑器：上方 KaTeX 实时预览，下方 LaTeX 源码](docs/editor-hero.png)
+<p align="center">
+  <a href="https://texeq.rancholab.cn"><img src="docs/social-preview.png" alt="TeXEq — 写 LaTeX，插入真 SVG，双击即改" width="840"></a>
+</p>
 
 TeXEq 是一款专为 macOS 开发的轻量级数学公式编辑器，深度适配 **Microsoft PowerPoint 和 Word**，为熟悉 MathType、AxMath 的用户提供自然的公式编辑体验。
 
 它把 LaTeX 实时排版、SVG 矢量输出、公式双击编辑与旧公式迁移整合到同一工作流程中，让科研人员、教师和学生能够在 Mac 上更轻松地制作课件、撰写论文、编辑数学文档。
 
-**无需 Windows 虚拟机，无需安装庞大的 TeX 环境，安装即可使用。**
+**换 Mac，不必从头重写每一个公式。无需 Windows 虚拟机，无需安装庞大的 TeX 环境。**
+
+> [!IMPORTANT]
+> **安装包未公证。** 首次打开若被拦截：右键 `.pkg` → **打开**，或到「系统设置 → 隐私与安全性」点 **仍要打开**。首次运行还需在 **系统设置 → 隐私与安全性 → 辅助功能** 中勾选 **TeXEq**，否则双击编辑不生效。完整步骤见 [docs/INSTALL.md](docs/INSTALL.md)。
 
 ## 为什么选择 TeXEq
 
@@ -28,9 +47,7 @@ TeXEq 是一款专为 macOS 开发的轻量级数学公式编辑器，深度适�
 
 尤其是已经积累多年的教学课件、科研报告和数学文档，往往包含大量旧公式。重新录入不仅耗费时间，还可能破坏原有排版。
 
-**TeXEq 正是为解决这些问题而开发。**
-
-它不仅让 Mac 版 Office 拥有熟悉的公式编辑入口，还支持对符合条件的 MathType / AxMath 旧公式进行直接读取与原位转换，让旧文档的继续编辑变得更加容易。
+**TeXEq 正是为解决这些问题而开发。** 它不仅让 Mac 版 Office 拥有熟悉的公式编辑入口，还支持对符合条件的 MathType / AxMath 旧公式进行直接读取与原位转换，让旧文档的继续编辑变得更加容易。
 
 ## 核心功能与亮点
 
@@ -55,7 +72,8 @@ TeXEq 支持识别和转换符合条件的 MathType、AxMath 等传统 OLE 公�
 - 尽可能保留原有位置、大小、旋转角度及层级。
 - 转换失败时保留旧对象，避免破坏文档。
 
-> **特别说明：** 旧公式的转换依赖原对象中是否保存了可提取的 TeX / LaTeX 信息。纯图片或缺少有效源码的对象无法自动还原，并非所有旧公式都能保证转换成功。
+> [!NOTE]
+> 旧公式的转换依赖原对象中是否保存了**可提取的 TeX / LaTeX 信息**。纯图片或缺少有效源码的对象无法自动还原，并非所有旧公式都能保证转换成功。
 
 ### 3. SVG 矢量公式，放大依然清晰
 
