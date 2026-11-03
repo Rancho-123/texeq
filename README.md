@@ -111,6 +111,12 @@ TeXEq bridges that gap: a familiar MathType / AxMath-style editing experience, m
 - No upload of equation or document content. The license server only validates activation codes and a machine hash.
 - Offline editing and rendering.
 
+### 9. Easy device migration
+
+- A license covers up to **two Macs**, with device transfer support.
+- Move between a work and a personal Mac, or upgrade to a new machine, without losing your editing workflow.
+- Your existing `.pptx` / `.docx` files and equations stay editable on the new device.
+
 ## Screenshots
 
 | PowerPoint | Word |
@@ -196,6 +202,12 @@ This repository is a **distribution and support channel**: it hosts installers (
 - The installer is free to download and includes a 7-day full-feature trial.
 - See [LICENSE.md](LICENSE.md) and the [EULA](https://texeq.rancholab.cn/legal.html).
 - Feedback: open an [issue](https://github.com/Rancho-123/texeq/issues) or use the in-app **Feedback & Suggestions** entry.
+
+## Our Goal
+
+**Professional equation editing on Mac should feel familiar, effortless and efficient.**
+
+TeXEq aims to make the move from MathType / AxMath workflows on Windows to Microsoft Office on macOS as smooth as possible — without compromising equation quality, editability or productivity.
 
 ## Links
 
